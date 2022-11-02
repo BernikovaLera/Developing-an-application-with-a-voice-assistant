@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище DiplomModelContainer" CdmEntityContainer="DiplomEntities">
+    <EntitySetMapping Name="TableFavourites">
+      <EntityTypeMapping TypeName="DiplomModel.TableFavourites">
+        <MappingFragment StoreEntitySet="TableFavourites">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Command" ColumnName="Command" />
+          <ScalarProperty Name="Way" ColumnName="Way" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TableQuestionAnswer">
+      <EntityTypeMapping TypeName="DiplomModel.TableQuestionAnswer">
+        <MappingFragment StoreEntitySet="TableQuestionAnswer">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

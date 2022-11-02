@@ -1,0 +1,33 @@
+﻿<Window x:Class="Diplom.Favorites"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diplom"
+        mc:Ignorable="d"
+        Title="Избранное" Height="400" Width="670" ResizeMode="CanMinimize">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="23,15,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"> Введите голосовую<LineBreak/>команду</TextBlock>
+        <TextBox x:Name="command_" HorizontalAlignment="Left" Height="40" Margin="216,15,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="385"/>
+
+        <TextBlock Height="40" Width="134" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="23,80,507.667,252"> Введите URL сайта</TextBlock>
+        <TextBox x:Name="way_" HorizontalAlignment="Left" Height="40" Margin="216,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="385"/>
+
+        <Button Content="Обновить" HorizontalAlignment="Left" Margin="501,130,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Content="Сохранить" HorizontalAlignment="Left" Margin="396,130,0,0" VerticalAlignment="Top" Width="100" Click="Save"/>
+
+        <DataGrid Name="dataGrid2"  AutoGenerateColumns="False" IsReadOnly="True" Margin="0,160,0.667,0"  CanUserAddRows="False" Background="White">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Команда пользователя" Binding="{Binding Command}"/>
+                <DataGridTextColumn Header="Путь к объекту" Binding="{Binding TableUrl.URL}"/>
+                <DataGridTemplateColumn Width="auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Name="BDel" Click="Del_Click" Width="80" Margin="0,0,0,0">Удалить</Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

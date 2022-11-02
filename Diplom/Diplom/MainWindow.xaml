@@ -1,0 +1,119 @@
+﻿<Window x:Class="Diplom.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diplom"
+        xmlns:tb="http://www.hardcodet.net/taskbar" 
+        mc:Ignorable="d"
+        Title="Хомяк Валера" Height="400" Width="670" ResizeMode="CanMinimize">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90*"></RowDefinition>
+            <RowDefinition  Height="70"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="130"></ColumnDefinition>
+            <ColumnDefinition Width="103*"></ColumnDefinition>
+            <ColumnDefinition Width="27*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Row="0" Grid.Column="0" Margin="0,0,0,65" Grid.RowSpan="2" >
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#B70CE8" Offset="0"/>
+                    <GradientStop Color="#810CF2" Offset="0.4"/>
+                    <GradientStop Color="#3400DB" Offset="0.8"/>
+                    <GradientStop Color="#0C15F2" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+
+        <Border Grid.Row="1" Margin="0,0,-0.333,0" Grid.ColumnSpan="3" >
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#0C15F2" Offset="0"/>
+                    <GradientStop Color="#0C4EE8" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Label x:Name="label2" Content="Датчик записи" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="209,31,0,0" Foreground="White" Width="113" FontSize="14" FontFamily="Comic Sans MS"/>
+        </Border>
+
+
+        <Button x:Name="Question_button" ToolTip="Задай вопрос, который тебя интересует" HorizontalAlignment="Left" Margin="75,10,0,0" VerticalAlignment="Top" Click="Question_Click" Grid.Column="1" Grid.Row="1">
+            <StackPanel Orientation="Horizontal" Width="115" >
+                <Image Source="/image/question.png" Height="25" Width="25"/>
+                <TextBlock Height="24" Width="70" HorizontalAlignment="Center" VerticalAlignment="Center"><Run Text="   Вопрос"/></TextBlock>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="Answer_button" ToolTip="Получи свой ответ" HorizontalAlignment="Left" Margin="230,10,0,0" VerticalAlignment="Top"  Click="Answer_Click" Grid.Column="1" Grid.Row="1" >
+            <StackPanel Orientation="Horizontal" Width="115" >
+                <Image Source="/image/answer.png" Height="25" Width="25"/>
+                <TextBlock Height="24" Width="70" HorizontalAlignment="Center" VerticalAlignment="Center"><Run Text="   Ответ"/></TextBlock>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="Dialog_button" ToolTip="Вы можете посмотреть историю диалогов с ботом" Margin="5,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120" Click="Dialog_Click" Height="42">
+            <StackPanel Orientation="Horizontal" Width="115" >
+                <Image Source="/image/dialog histori.png" Height="25" Width="25"/>
+                <TextBlock><Run Text=" "/></TextBlock>
+                <TextBlock Height="40" Width="75" HorizontalAlignment="Center" VerticalAlignment="Center">История<LineBreak/>диалогов</TextBlock>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="Statistics_button" ToolTip="Ну и сколько ты там наговорил"  HorizontalAlignment="Left" Margin="5,57,0,0" VerticalAlignment="Top"  Click="Statistics_Click">
+            <StackPanel Orientation="Horizontal" Width="115" >
+                <Image Source="/image/statistics.png" Height="25" Width="25"/>
+                <TextBlock Height="24" Width="92" HorizontalAlignment="Center" VerticalAlignment="Center"><Run Text="Статистика"/></TextBlock>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="Reference_button" ToolTip="Читать правила нужно всегда" HorizontalAlignment="Left" Margin="5,116,0,0" VerticalAlignment="Top"  Click="Reference_Click" >
+            <StackPanel Orientation="Horizontal" Width="115" >
+                <Image Source="/image/reference.png" Height="25" Width="25"/>
+                <TextBlock Height="24" Width="84" HorizontalAlignment="Center" VerticalAlignment="Center"><Run Text=" Справка"/></TextBlock>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="About_the_program_button" ToolTip="Узнай кто стоит за созданием программы"  HorizontalAlignment="Left" Margin="5,146,0,0" VerticalAlignment="Top"  Click="About_the_program_Click">
+            <StackPanel Orientation="Horizontal" Width="115" >
+                <Image Source="/image/programm.png" Height="25" Width="25"/>
+                <TextBlock Height="24" Width="92" HorizontalAlignment="Center" VerticalAlignment="Center"><Run Text="О программе"/></TextBlock>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="Favorites" ToolTip="Всё что  вы сохраняли"  HorizontalAlignment="Left" Margin="5,86,0,0" VerticalAlignment="Top"  Click="Favorites_Click">
+            <StackPanel Orientation="Horizontal" Width="115" >
+                <Image Source="/image/favourite.png" Height="25" Width="25"/>
+                <TextBlock Height="24" Width="92" HorizontalAlignment="Center" VerticalAlignment="Center"><Run Text=" Избранное"/></TextBlock>
+            </StackPanel>
+        </Button>
+
+        <Border BorderBrush="Black" CornerRadius="5"  BorderThickness="2" Grid.Column="1" Margin="10,10,10.333,206">
+            <TextBlock x:Name="Users_question_TextBlock"  Grid.Column="1" HorizontalAlignment="Left" Margin="8,8,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"  />
+        </Border>
+        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="10.667,10,0,0" TextWrapping="Wrap" Text="Вопрос пользователя" VerticalAlignment="Top" Width="95" Height="42"/>
+
+        <Border BorderBrush="Black" CornerRadius="5" BorderThickness="2" Grid.Column="1" Margin="13,101,10.333,10" >
+            <TextBlock x:Name="Bots_response_TextBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="8,8,0,0" TextWrapping="Wrap" VerticalAlignment="Top"  Width="380" Text="Вас приветствует голосовой помощник Хомяк Валера" />
+        </Border>
+        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="10.667,102,0,0" TextWrapping="Wrap" Text="Ответ бота" VerticalAlignment="Top" Width="76" RenderTransformOrigin="-0.132,0.585" Height="16"/>
+
+        <Image Margin="25,0,25,10" Source="image/logo.png" Stretch="Fill" Height="60" Width="80" RenderTransformOrigin="0.483,0.685" Grid.Row="1"/>
+
+        <tb:TaskbarIcon Visibility="Visible" TrayLeftMouseDown="TaskbarIcon_TrayLeftMouseDown" ToolTipText="Хомяк Валера" IconSource="image/logo(1).ico" >
+            <tb:TaskbarIcon.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Click="Dialog_Click" Header="История диалогов" />
+                    <MenuItem Click="Reference_Click" Header="Справка" />
+                    <MenuItem Click="About_the_program_Click" Header="О программе" />
+                    <MenuItem Click="Exit_Click" Header="Выход" />
+                </ContextMenu>
+            </tb:TaskbarIcon.ContextMenu>
+        </tb:TaskbarIcon>
+
+    </Grid>
+</Window>

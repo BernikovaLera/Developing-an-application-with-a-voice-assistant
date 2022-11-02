@@ -1,0 +1,18 @@
+﻿<Window x:Class="Diplom.Statistica"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diplom"
+        mc:Ignorable="d"
+        Title="Статистика" Height="400" Width="600" Loaded="Stat">
+    <Grid>
+        <DataGrid Name="dg2" AutoGenerateColumns="False" IsReadOnly="True"  ItemsSource="{Binding Tablee}" ColumnHeaderStyle="{StaticResource DGridCentAl}" CanUserAddRows="False" Background="White">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Дата" Binding="{Binding Date}" Width="100" CellStyle="{StaticResource CenterCellStyle}" FontSize="14"/>
+                <DataGridTextColumn Header="Количество" Binding="{Binding kolvo}" Width="100" CellStyle="{StaticResource CenterCellStyle}" FontSize="14"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>

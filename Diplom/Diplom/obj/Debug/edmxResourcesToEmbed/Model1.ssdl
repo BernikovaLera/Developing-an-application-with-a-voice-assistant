@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище DiplomModel1" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TableCommand">
+    <Key>
+      <PropertyRef Name="IdCommand" />
+    </Key>
+    <Property Name="IdCommand" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Command" Type="nvarchar(max)" />
+    <Property Name="IdUrl" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TableUrl">
+    <Key>
+      <PropertyRef Name="IdUrl" />
+    </Key>
+    <Property Name="IdUrl" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="URL" Type="nvarchar(max)" />
+  </EntityType>
+  <Association Name="FK_TableCommand_TableUrl">
+    <End Role="TableUrl" Type="Self.TableUrl" Multiplicity="1" />
+    <End Role="TableCommand" Type="Self.TableCommand" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TableUrl">
+        <PropertyRef Name="IdUrl" />
+      </Principal>
+      <Dependent Role="TableCommand">
+        <PropertyRef Name="IdUrl" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище DiplomModel1Container">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TableCommand" EntityType="Self.TableCommand" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TableUrl" EntityType="Self.TableUrl" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_TableCommand_TableUrl" Association="Self.FK_TableCommand_TableUrl">
+      <End Role="TableUrl" EntitySet="TableUrl" />
+      <End Role="TableCommand" EntitySet="TableCommand" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

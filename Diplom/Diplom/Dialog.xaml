@@ -1,0 +1,30 @@
+﻿<Window x:Class="Diplom.Dialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diplom"
+        mc:Ignorable="d"
+        Title="История диалогов" Height="400" Width="670" ResizeMode="CanMinimize">
+    <Grid>
+        <DataGrid Name="dataGrid1" AutoGenerateColumns="False" IsReadOnly="True" Margin="0,60,0.333,-0.333" ItemsSource="{Binding AllTable}" CanUserAddRows="False" Background="White">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Дата" Binding="{Binding Date}"/>
+                <DataGridTextColumn Header="Вопрос пользователя" Binding="{Binding Question}"/>
+                <DataGridTextColumn Header="Ответ бота" Binding="{Binding Answer}"/>
+                <DataGridTemplateColumn Width="auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Name="BDel" Click="Del_Click" Width="80" Margin="0,0,0,0">Удалить</Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Выгрузка в эксель" HorizontalAlignment="Left" Margin="482,10,0,0" VerticalAlignment="Top" Click="Upload_to_excel" Width="143"/>
+        <Label Content="Поиск по вопросу:" HorizontalAlignment="Left" Margin="10,9,0,0" VerticalAlignment="Top"/>
+        <StackPanel>
+            <TextBox Height="20" Width="200" x:Name="SearchBox" TextChanged="SearchBox_TextChanged" Margin="50,15,203.667,10"/>
+        </StackPanel>
+    </Grid>
+</Window>

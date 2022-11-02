@@ -1,0 +1,61 @@
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\Diplom.csproj.AssemblyReference.cache
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\MainWindow.g.cs
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\App.g.cs
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\NAudio.Asio.dll
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\NAudio.Core.dll
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\NAudio.dll
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\NAudio.Midi.dll
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\NAudio.Wasapi.dll
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\NAudio.WinForms.dll
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\NAudio.WinMM.dll
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\NAudio.xml
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\MainWindow.baml
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\Diplom.Properties.Resources.resources
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\Diplom.csproj.GenerateResource.cache
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\Diplom.csproj.CoreCompileInputs.cache
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\EntityFramework.dll
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\EntityFramework.xml
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\Dialog.g.cs
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\Dialog.baml
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\Dictionary.baml
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\App.baml
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\Diplom.csproj.ResolveComReference.cache
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\ExcelNumberFormat.dll
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\System.IO.Packaging.dll
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\ExcelNumberFormat.xml
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\About_the_program.g.cs
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\About_the_program.baml
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\Hardcodet.NotifyIcon.Wpf.dll
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\Hardcodet.NotifyIcon.Wpf.xml
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\Statistica.g.cs
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\Statistica.baml
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\Favorites.g.cs
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\Favorites.baml
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\Хомяк Валера_Content.g.cs
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\Хомяк Валера_MarkupCompile.cache
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\Хомяк Валера_MarkupCompile.lref
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\Хомяк Валера.exe.config
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\Хомяк Валера.exe.manifest
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\Хомяк Валера.application
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\Хомяк Валера.exe
+C:\Users\Valeriya\source\repos\Diplom\Diplom\bin\Debug\Хомяк Валера.pdb
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\Хомяк Валера.g.resources
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\Хомяк Валера.TrustInfo.xml
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\Хомяк Валера.exe.manifest
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\Хомяк Валера.application
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\Хомяк Валера.exe
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\Хомяк Валера.pdb
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\Reference.g.cs
+C:\Users\Valeriya\source\repos\Diplom\Diplom\obj\Debug\Reference.baml
